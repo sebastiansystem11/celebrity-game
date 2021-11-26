@@ -1,0 +1,30 @@
+{
+  "name": "react_rest_node_express",
+  "version": "1.0.0",
+  "description": "HW4: Guess the Celebrity App (Full Stack)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server",
+    "lint": "eslint server --fix --ext .js,.jsx",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.0",
+    "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.0"
+  }
+}
