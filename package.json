@@ -4,7 +4,7 @@
   "description": "HW4: Guess the Celebrity App (Full Stack)",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "start": "node server.js",
     "lint": "eslint . --ext .js,.jsx",
     "test": "jest --detectOpenHandles"
   },

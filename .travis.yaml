@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 14.17.6
+install:
+  - npm install
+  - cd client && npm install
+script:
+  - npm run build && cd ../
+before_deploy: "echo 'deploy'"
+deploy:
+  provider: heroku
+  api_key:
+    secure: '3ce4bd4f-f833-49d0-bcc5-8b83692ad27f'
+  app: celebrity-game
+  skip_cleanup: true
+  node: '14.17.6'
+  run:
+    - 'npm run start'
