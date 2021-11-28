@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint . --ext .js,.jsx",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --runInBand ./__tests__"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +18,13 @@
     "mongoose": "^6.0.13"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^2.1.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "jest": "^27.3.1",
+    "mongodb-memory-server": "^8.0.3",
     "prettier": "^2.5.0",
     "supertest": "^6.1.6"
   }
