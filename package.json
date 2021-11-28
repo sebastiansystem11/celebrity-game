@@ -4,9 +4,9 @@
   "description": "HW4: Guess the Celebrity App (Full Stack)",
   "main": "server.js",
   "scripts": {
-    "dev": "node server",
-    "lint": "eslint server --fix --ext .js,.jsx",
-    "test": ""
+    "dev": "nodemon server.js",
+    "lint": "eslint . --ext .js,.jsx",
+    "test": "jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -18,13 +18,12 @@
     "mongoose": "^6.0.13"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-config-airbnb": "^19.0.1",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "^2.5.0"
+    "jest": "^27.3.1",
+    "prettier": "^2.5.0",
+    "supertest": "^6.1.6"
   }
 }
